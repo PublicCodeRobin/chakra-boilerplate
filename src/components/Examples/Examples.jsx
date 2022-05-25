@@ -1,15 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Box, Button, Heading, HStack, IconButton, Image, Text, VStack } from '@chakra-ui/react';
-import Tailwind from './Tailwind/Tailwind';
-import Chakra from './Chakra/Chakra';
+import { Button, Heading, HStack, IconButton, Image, Text, VStack } from '@chakra-ui/react';
 import { BiCart, BiHeart } from 'react-icons/all';
-
-let timeoutId;
 
 const Examples = ({ homes }) => {
   const [loading, setLoading] = useState(null);
   const [clicked, setClicked]  = useState({
-    first: true,
+    first: false,
     second: false,
   });
 
@@ -18,11 +14,8 @@ const Examples = ({ homes }) => {
   useEffect(() => {
     const clickedItem = Object.entries(clicked).map((clickedItem) => {
       return clicked?.forEach?.(([key, val]) => {
-
       });
     })[0]
-
-    console.log(clickedItem);
 
     if (clickedItem) {
       setLoading(clickedItem);

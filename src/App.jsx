@@ -1,19 +1,14 @@
 import * as React from 'react';
 import {
   ChakraProvider,
-  Box,
   Text,
-  Link,
   VStack,
-  Code,
-  Grid, Image, Badge,
 } from '@chakra-ui/react';
 
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import theme from './theme/theme';
 
-import { StarIcon } from '@chakra-ui/icons';
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Ankeiler } from './components/Ankeiler/Ankeiler';
 import { PUBLIC_URL } from './consts';
 import Examples from './components/Examples/Examples';
