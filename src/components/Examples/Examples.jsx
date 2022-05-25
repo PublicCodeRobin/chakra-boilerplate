@@ -17,10 +17,10 @@ const Examples = ({ homes }) => {
 
   useEffect(() => {
     const clickedItem = Object.entries(clicked).map((clickedItem) => {
-      return clicked.forEach(([key, val]) => {
+      return clicked?.forEach?.(([key, val]) => {
 
       });
-    });
+    })[0]
 
     console.log(clickedItem);
 
